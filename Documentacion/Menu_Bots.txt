@@ -1,0 +1,25 @@
+ Menu del Bot
+Ir a BptFather
+/mybots
+Seleccionar Bot
+Edit Bot
+Edit Commands
+
+** LOS COMANDOS COMIENZAN EN MINÚSCULA Y SOLO ACEPTAN CARACTERES SAJONES.
+
+temperatura - Consultar Temperatura y Humedad
+config_actual - Muestra la configuración
+set_temp_hum - Setear Temperatura y Humedad
+histeresis_on - Activa Histeresis
+histeresis_off - Desactiva Histeresis
+light_on - Encender Led
+light_off - Apagar Led
+
+Monitor de Temperatura y Humedad
+Versión: 1.0.1
+Fecha: 2024-08-29
+DVDYSE - INTI
+
+Sistema de monitoreo de temperatura y humedad en laboratorios donde se instala el microcontrolador que se comunica con el Bot.
+Permite configurar los límites de las alarmas y activación y desactivación de histeresis.
+La histeresis evita el exceso de envío de alarmas en caso de que el sistema esté oscilando entre uno de los límites seteados por el usuario.

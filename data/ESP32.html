@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+ 
+    <head>
+        <script src="test.js"></script>
+        <script type = "text/javascript" src = "https://cdn.canvasjs.com/canvasjs.min.js" ></script>
+        <link rel="stylesheet" href="styles.css">
+        <meta charset="UTF-8">
+
+        <!-- <style>
+        .circle1 {
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            border-radius: 40%;
+          }
+        </style> -->
+
+    </head>
+ 
+    <body>
+        <h1 id="headerH1">ESP32</h1>
+
+        <table>
+            <tr>
+                <td><div id="GPIO1table" class="circle1"></div>GPIO1</td>
+                <td><div id="GPIO2table" class="circle1"></div>GPIO2</td>
+            </tr>
+            <tr>
+                <td><div id="GPIO3table" class="circle1"></div>GPIO3</td>
+                <td><div id="GPIO4table" class="circle1"></div>GPIO4</td>
+            </tr>
+        </table>
+        
+       
+        <input type="checkbox" id="GPIO1checkbox" name="GPIO1" value="HIGH" onchange="cambiarColor()">
+        <label for="GPIO1checkbox">GPIO1</label>
+        <input type="checkbox" id="GPIO2checkbox" name="GPIO2" value="HIGH" onchange="cambiarColor()">
+        <label for="GPIO2checkbox">GPIO2</label>
+        <input type="checkbox" id="GPIO3checkbox" name="GPIO3" value="HIGH" onchange="cambiarColor()">
+        <label for="GPIO3checkbox">GPIO3</label>
+        <input type="checkbox" id="GPIO4checkbox" name="GPIO4" value="HIGH" onchange="cambiarColor()">
+        <label for="GPIO4checkbox">GPIO4</label>
+
+        <div id="visualizacion">
+            <div id="entradas">
+                <p id="lecturaInput">Entradas: --.--</p>
+                        
+            </div>
+            <div id = "chartContainer" style = "height: 300px; width: 100%;"></div>
+
+        </div>
+        
+
+        
+        <button onclick="navegarAtras()">ATRÁS</button>
+       
+        
+
+        <script type = "text/javascript" >
+
+                    
+               /*  window.onload = function () {
+                //var dataPoints = [{y : 200}, {y : 10}, {y : 200}, {y : 20}, {y : 17}];
+                var dataPoints = [{y : 0}];
+                var dataInput = document.getElementById("lecturaInput").value;
+                var chart = new CanvasJS.Chart("chartContainer", {
+                        title : {
+                            text : "Dynamic Data"
+                        },
+                        data : [{
+                                type : "spline",
+                                dataPoints : dataInput
+                            }
+                        ]
+                    });
+
+                chart.render();
+
+                var yVal = dataInput, updateCount = 0;
+                var updateChart = function () {
+
+                    //yVal = yVal + Math.round(5 + Math.random() * (-5 - 5));
+                    updateCount++;
+                    
+                    dataPoints.push({
+                        y : yVal
+                    });
+                    
+                    chart.options.title.text = "Update " + updateCount;
+                    chart.render();    
+                    
+                };
+
+                // update chart every second
+                setInterval(function(){updateChart()}, 1000);
+                }	 */
+        </script>
+    </body>
+ 
+</html>
+
+

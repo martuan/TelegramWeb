@@ -1,0 +1,29 @@
+Para saber el CHAT_ID: 
+Para saber el Bot ID: https://api.telegram.org/bot<YourBOTToken>/getMe
+Otra forma, en telegram buscar contacto: 
+1°- Chat ID Bot
+2°- Pulsar Bot
+3°- Elegir Bot
+
+Para saber el ID del grupo: 
+En telegram buscar contacto: 
+1°- Chat ID Bot
+2°- Pulsar Chat
+3°- Elegir el Chat del grupo, aceptar Enviar al Chat ID Bot
+El Chat id que me da es el id que utilizará el microcontrolador para enviar un mensaje. Para identificar al que lo recibe en el firmware agregar 100 al inicio del id
+
+Para saber mis Bots de Telegram: en telegram buscar contacto: BotFather
+En Menú: /mybots
+Elegir un bot. en API Token me dará el Token
+**********************************************************************************
+Nombre de usuario: https://t.me/INTI_MonitorTemperarura_1_bot
+
+BOTtoken = "7108639657:AAFxG2An5kHBQNmGKaLIMsjFv_K60X0Lh-0"
+Nombre del bot "@INTI_MonitorTemperarura_1_bot" 
+int64_t chat_ID= -4127887228;
+
+**********************************************************************************
+BOTtoken = "7392446861:AAHl9FMTkgggG4XYomj3-lr4V7JuwDTTeMk"
+Nombre del bot = "@INTI_02_bot"
+int64_t chat_ID = -4240459321                         
+

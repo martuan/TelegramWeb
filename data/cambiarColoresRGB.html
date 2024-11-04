@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+ 
+    <head>
+        <script src="test.js"></script>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+ 
+    <body>
+        <h1 id="headerH1">Cambiar colores RGB</h1>
+        <!-- <form action="/ESP32" method="POST"> -->
+            
+        <form action="/cambiarColoresRGB" method="POST" onsubmit="formRGB()">
+            <label for="red">rojo:</label><br>
+            <input type="text" id="redComp" name="redComp" value=""><br>
+            <label for="green">verde:</label><br>
+            <input type="text" id="greenComp" name="greenComp" value=""><br>
+            <label for="blue">azul:</label><br>
+            <input type="text" id="blueComp" name="blueComp" value=""><br><br>
+            <input type="submit" value="Enviar">
+        </form>
+        <button onclick="navegarAtras()">ATRÁS</button>
+
+
+    </body>
+
+ </html>

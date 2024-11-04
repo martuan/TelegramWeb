@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+ 
+    <head>
+        <script src="test.js"></script>
+        <link rel="stylesheet" href="styles.css">
+        <meta charset="UTF-8">
+
+
+
+    </head>
+ 
+    <body>
+        <h1 id="headerH1">ESP32</h1>
+        <!-- <form action="/ESP32" method="POST"> -->
+        
+        <p id="GPIO1label">GPIO1</p>
+        <p id="GPIO2label">GPIO2</p>
+
+        <table>
+            <tr>
+                <td><div id="GPIO1table" class="circle1"></div>GPIO1</td>
+                <td><div id="GPIO2table" class="circle1"></div>GPIO2</td>
+            </tr>
+            <tr>
+                <td><div id="GPIO3table" class="circle1"></div>GPIO3</td>
+                <td><div id="GPIO4table" class="circle1"></div>GPIO4</td>
+            </tr>
+        </table>
+    
+    
+        <!-- <form action="/ESP32" method="POST" onsubmit="interactuarConESP32()"> -->
+            <form action="javascript:void(0);" method="POST" onsubmit="interactuarConESP32()">
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value="John"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value="Doe"><br><br>
+
+            <input type="checkbox" id="GPIO1checkbox" name="GPIO1" value="HIGH"  >
+            <label for="GPIO1">GPIO1</label><br>
+            <input type="checkbox" id="GPIO2checkbox" name="GPIO2" value="HIGH">
+            <label for="GPIO2">GPIO2</label><br>
+            
+            <button type="button" id="GPIO1boton" onclick="cambiarColor()"></button>
+
+            <input type="submit" value="Submit">
+        </form>
+        <button onclick="navegarAtras()">ATRÁS</button>
+
+
+
+        <script>
+            document.getElementById("GPIO1checkbox").addEventListener("click", cambiarColor, true);
+            document.getElementById("GPIO2checkbox").addEventListener("click", cambiarColor, true);
+            // document.getElementById("GPIO3checkbox").addEventListener("click", cambiarColor, true);
+            // document.getElementById("GPIO4checkbox").addEventListener("click", cambiarColor, true);
+            document.getElementById("GPIO1boton").addEventListener("click", cambiarColor, true);
+
+            function cambiarColor(){
+
+                /*
+                if(document.getElementById("GPIO1checkbox").checked == true){
+
+                    document.getElementById("GPIO1table").style.color = "green";
+
+                }else{
+                    document.getElementById("GPIO1table").style.color = "red";
+                }
+                    */
+
+                document.getElementById("GPIO1table").style.color = "green";
+
+            }
+
+        </script>
+    </body>
+ 
+</html>

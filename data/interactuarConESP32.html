@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+ 
+    <head>
+        <script src="test.js"></script>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+ 
+    <body>
+        <h1 id="headerH1">Interactuar con ESP32</h1>
+        <!-- <form action="/ESP32" method="POST"> -->
+        
+        <p id="GPIO2">LED_BUILTIN</p>
+    
+    
+        <form action="/interactuarConESP32" method="POST" onsubmit="interactuarConESP32()">
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value="John"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value="Doe"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+        <button onclick="navegarAtras()">ATRÁS</button>
+
+
+    </body>
+
+ </html>

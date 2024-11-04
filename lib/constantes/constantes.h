@@ -1,0 +1,20 @@
+#ifndef constantes_h
+#define constantes_h
+
+#define SIN_ALERTA 0
+
+#define TEMPERATURA_EN_RANGO 1
+#define TEMPERATURA_ALTA 2
+#define TEMPERATURA_BAJA 3
+#define HUMEDAD_EN_RANGO 4
+#define HUMEDAD_ALTA 5
+#define HUMEDAD_BAJA 6
+#define TEMPERATURA_OSCILANDO_EN_ALTA 7
+#define TEMPERATURA_OSCILANDO_EN_BAJA 8
+#define HUMEDAD_OSCILANDO_EN_ALTA 9
+#define HUMEDAD_OSCILANDO_EN_BAJA 10
+
+//#define SET_TEMPERATURA_ALTA 4
+//#define SET_TEMPERATURA_BAJA 5
+
+#endif
